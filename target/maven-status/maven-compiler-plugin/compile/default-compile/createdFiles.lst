@@ -1,0 +1,5 @@
+Locators\MainPage.class
+Locators\LoginPage.class
+Locators\RecoverPasswordPage.class
+Locators\PersonalAccountPage.class
+Locators\RegistrationPage.class

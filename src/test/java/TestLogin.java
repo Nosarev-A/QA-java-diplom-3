@@ -18,6 +18,7 @@ public class TestLogin {
     @Test
     @Step("Login via Personal Account button")
     public void testLoginPersonalAccountButtonChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/");
@@ -31,6 +32,7 @@ public class TestLogin {
     @Test
     @Step("Login via Enter account button")
     public void testLoginEnterAccountButtonChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/");
@@ -44,6 +46,7 @@ public class TestLogin {
     @Test
     @Step("Login via registration form")
     public void testLoginRegistrationFormChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/register");
@@ -59,6 +62,7 @@ public class TestLogin {
     @Test
     @Step("Login via recover password page")
     public void testLoginRecoverPasswordPageChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/forgot-password");

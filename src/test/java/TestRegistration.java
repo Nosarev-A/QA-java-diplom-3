@@ -28,6 +28,7 @@ public class TestRegistration {
     @Test
     @Step("Registration in Chrome")
     public void testRegistrationChrome() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/");

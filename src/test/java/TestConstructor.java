@@ -15,6 +15,7 @@ public class TestConstructor {
     @Test
     @Step("Check click on the sauce tab")
     public void testClickSauceTabChrome() {
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site");
@@ -26,6 +27,7 @@ public class TestConstructor {
     @Test
     @Step("Check click on the ingredients tab")
     public void testClickIngredientsTabChrome() {
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site");
@@ -37,6 +39,7 @@ public class TestConstructor {
     @Test
     @Step("Check click on the bun tab")
     public void testClickBunTabChrome() {
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site");

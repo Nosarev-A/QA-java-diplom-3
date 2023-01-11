@@ -16,6 +16,7 @@ public class TestPasswordLength {
     @Test
     @Step("Error of short password is visible at Chrome")
     public void testVisibilityErrorOfShortPasswordChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/");

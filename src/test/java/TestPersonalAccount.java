@@ -17,6 +17,7 @@ public class TestPersonalAccount {
     @Test
     @Step("Check click on the Personal Account button")
     public void testClickPersonalAccountButtonChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/login");
@@ -30,6 +31,7 @@ public class TestPersonalAccount {
     @Test
     @Step("Check click on the Constructor button")
     public void testClickConstructorButtonChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/login");
@@ -45,6 +47,7 @@ public class TestPersonalAccount {
     @Test
     @Step("Check click on the Stellar burger logo")
     public void testClickStellarBurgerLogoChrome(){
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/login");
@@ -106,6 +109,7 @@ public class TestPersonalAccount {
     @Test
     @Step("Check click on the Logout button")
     public void testClickLogoutButtonChrome() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://stellarburgers.nomoreparties.site/login");
