@@ -1,12 +1,12 @@
-import Locators.RegistrationPage;
-import Locators.LoginPage;
-import Locators.PersonalAccountPage;
+import locatorsClasses.RegistrationPage;
+import locatorsClasses.LoginPage;
+import locatorsClasses.PersonalAccountPage;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.junit.Test;
 import org.junit.After;
-import Locators.MainPage;
+import locatorsClasses.MainPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.qameta.allure.Step;
 import org.apache.commons.lang3.RandomStringUtils;

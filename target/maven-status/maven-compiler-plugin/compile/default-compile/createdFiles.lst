@@ -1,5 +1,5 @@
-Locators\MainPage.class
-Locators\LoginPage.class
-Locators\RecoverPasswordPage.class
-Locators\PersonalAccountPage.class
-Locators\RegistrationPage.class
+locatorsClasses\RecoverPasswordPage.class
+locatorsClasses\RegistrationPage.class
+locatorsClasses\PersonalAccountPage.class
+locatorsClasses\LoginPage.class
+locatorsClasses\MainPage.class

@@ -1,20 +1,20 @@
-import Locators.LoginPage;
-import Locators.RecoverPasswordPage;
-import Locators.RegistrationPage;
+import locatorsClasses.LoginPage;
+import locatorsClasses.RecoverPasswordPage;
+import locatorsClasses.RegistrationPage;
 import static org.junit.Assert.*;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.junit.Test;
 import org.junit.After;
-import Locators.MainPage;
+import locatorsClasses.MainPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.qameta.allure.Step;
 import java.util.concurrent.TimeUnit;
 
 public class TestLogin {
     private WebDriver driver;
-    private final String email = "nosareffartem@yandex.ru";
-    private final String password = "4538500";
-
+    private final String email = RandomStringUtils.randomAlphabetic(9) + "gmail.com";
+    private final String password = "01234567";
     @Test
     @Step("Login via Personal Account button")
     public void testLoginPersonalAccountButtonChrome(){

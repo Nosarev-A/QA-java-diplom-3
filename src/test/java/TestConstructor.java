@@ -1,10 +1,8 @@
-import Locators.RegistrationPage;
-import Locators.LoginPage;
 import static org.junit.Assert.*;
 import org.openqa.selenium.WebDriver;
 import org.junit.Test;
 import org.junit.After;
-import Locators.MainPage;
+import locatorsClasses.MainPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.qameta.allure.Step;
 import java.util.concurrent.TimeUnit;
@@ -12,13 +10,14 @@ import java.util.concurrent.TimeUnit;
 public class TestConstructor {
     private WebDriver driver;
 
+    private static final String STELLABURGERS_URL = "https://stellarburgers.nomoreparties.site";
     @Test
     @Step("Check click on the sauce tab")
     public void testClickSauceTabChrome() {
         System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickSaucesTab();
         assertTrue(objMainPage.getSauceTabClassValue().contains("current"));
@@ -30,7 +29,7 @@ public class TestConstructor {
         System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickIngredientsTab();
         assertTrue(objMainPage.getIngredientsTabClassValue().contains("current"));
@@ -42,7 +41,7 @@ public class TestConstructor {
         System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickIngredientsTab();
         objMainPage.clickBunTab();
@@ -55,7 +54,7 @@ public class TestConstructor {
         System.setProperty("webdriver.chrome.driver","src/test/resources/yandexdriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickSaucesTab();
         assertTrue(objMainPage.getSauceTabClassValue().contains("current"));
@@ -67,7 +66,7 @@ public class TestConstructor {
         System.setProperty("webdriver.chrome.driver","src/test/resources/yandexdriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickIngredientsTab();
         assertTrue(objMainPage.getIngredientsTabClassValue().contains("current"));
@@ -79,7 +78,7 @@ public class TestConstructor {
         System.setProperty("webdriver.chrome.driver","src/test/resources/yandexdriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://stellarburgers.nomoreparties.site");
+        driver.get(STELLABURGERS_URL);
         MainPage objMainPage = new MainPage(driver);
         objMainPage.clickIngredientsTab();
         objMainPage.clickBunTab();

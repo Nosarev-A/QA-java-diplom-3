@@ -1,5 +1,5 @@
-C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\Locators\RecoverPasswordPage.java
-C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\Locators\PersonalAccountPage.java
-C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\Locators\MainPage.java
-C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\Locators\LoginPage.java
-C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\Locators\RegistrationPage.java
+C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\locatorsClasses\MainPage.java
+C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\locatorsClasses\RegistrationPage.java
+C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\locatorsClasses\RecoverPasswordPage.java
+C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\locatorsClasses\PersonalAccountPage.java
+C:\Users\nosar\IdeaProjects\Diplom_Artem_Nosarev_13\QA-java-diplom-3\QA-java-diplom-3\src\main\java\locatorsClasses\LoginPage.java

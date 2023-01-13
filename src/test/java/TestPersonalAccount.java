@@ -1,11 +1,11 @@
-import Locators.LoginPage;
+import locatorsClasses.LoginPage;
 import static org.junit.Assert.*;
 import java.util.concurrent.TimeUnit;
-import Locators.PersonalAccountPage;
+import locatorsClasses.PersonalAccountPage;
 import org.openqa.selenium.WebDriver;
 import org.junit.Test;
 import org.junit.After;
-import Locators.MainPage;
+import locatorsClasses.MainPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.qameta.allure.Step;
 

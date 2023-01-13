@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestPersonalAccount
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.923 s - in TestPersonalAccount
+Tests run: 8, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 36.041 s <<< FAILURE! - in TestPersonalAccount
+testClickPersonalAccountButtonYandex(TestPersonalAccount)  Time elapsed: 4.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<....nomoreparties.site/[account]> but was:<....nomoreparties.site/[login]>
+	at TestPersonalAccount.testClickPersonalAccountButtonYandex(TestPersonalAccount.java:74)
+
+testClickConstructorButtonChrome(TestPersonalAccount)  Time elapsed: 5.451 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="AppHeader_header__link__3D_hX" href="/">...</a> is not clickable at point (293, 44). Other element would receive the click: <div class="Modal_modal_overlay__x2ZCr"></div>
+  (Session info: chrome=109.0.5414.74)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GHNRDEJ', ip: '10.14.100.171', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\nosar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6116cbbff1cdf2811b1caf8342c67563
+	at TestPersonalAccount.testClickConstructorButtonChrome(TestPersonalAccount.java:43)
+
